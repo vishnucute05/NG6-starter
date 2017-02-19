@@ -1,0 +1,42 @@
+<navbar></navbar>
+<div id='container'>
+  <div class='cell'><input type='search' placeholder='Enter Agent Name' ng-model='$ctrl.details.agent'></div>
+  <div class='cell'>
+    <div class='button' data-ng-click="$ctrl.findAgents()">Search for {{$ctrl.details.agent}}</div>
+  </div>
+
+</div>
+<div class="alert alert-warning" ng-show="$ctrl.details.agent.length < 3">
+  Enter more than 3 Characters!!!
+</div>
+<br/>
+<h4 ng-show="$ctrl.showHeading"> Top 10 Agents with the name {{$ctrl.details.agent}} are</h4>
+<br/>
+<h4 ng-show="$ctrl.loading"> Loading .....</h4>
+<br/>
+<h4 ng-show="$ctrl.results" class="error"> No Results Found.. Search Again</h4>
+
+<table id="tabular" summary="Most Favorite Movies">
+  <colgroup>
+    <col class="tab-odd" />
+    <col class="tab-even" />
+    <col class="tab-odd" />
+    <col class="tab-even" />
+  </colgroup>
+  <thead ng-show="$ctrl.showHeading">
+    <tr>
+      <th scope="col" id="tab-comedy">Agent Name</th>
+      <th scope="col" id="tab-adventure">Agent Secondary Name</th>
+      <th scope="col" id="tab-action">Location</th>
+      <th scope="col" id="tab-children">Website</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat='agent in $ctrl.agents'>
+      <td>{{agent.Name}}</td>
+      <td>{{agent.SecondaryName}}</td>
+      <td>{{agent.Location}}</td>
+      <td>{{agent.Url}}</td>
+    </tr>
+  </tbody>
+</table>
