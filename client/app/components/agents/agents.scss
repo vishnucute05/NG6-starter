@@ -36,7 +36,7 @@ div.button {
     margin: 0;
     padding: 0 1.25rem;
     color: $lightTextColor;
-    background-color: $accentColor;
+    background-color: $primaryColor;
     font-weight: bold;
     border-top-right-radius: 0.312rem;
     border-bottom-right-radius: 0.312rem;
@@ -73,13 +73,13 @@ div.button {
         padding: 0.75rem 0.93rem;
         border-right: 0.0625rem solid $lightTextColor;
         border-left: 0.0625rem solid $lightTextColor;
-        color: $primaryColor;
+        color: $darkTextColor;
     }
     td {
         padding: 0.5rem 0.93rem;
         border-right: 0.0625rem solid $lightTextColor;
         border-left: 0.0625rem solid $lightTextColor;
-        color: $darkBgColor;
+        color: $darkTextColor;
     }
 }
 
@@ -93,12 +93,12 @@ div.button {
 
 #tabular #tab-adventure,
 #tabular #tab-children {
-    background: $bgColor;
-    border-bottom: 0.0625rem solid $bgColor;
+    background: $primaryColor;
+    border: 0.0625rem solid $bgColor;
 }
 
 #tabular #tab-comedy,
 #tabular #tab-action {
-    background: $bgColor;
-    border-bottom: 0.0625rem solid $bgColor;
+    background: $primaryColor;
+    border: 0.0625rem solid $bgColor;
 }
