@@ -6,7 +6,7 @@ div#container {
     div.cell {
         display: table-cell;
         &:last-child {
-            width: 0.0625;
+            width: 0.0625rem;
         }
     }
 }
