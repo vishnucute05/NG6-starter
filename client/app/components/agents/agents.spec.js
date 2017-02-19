@@ -37,9 +37,6 @@ describe('Agents', () => {
          
     });
   });
-
-
-
   describe('Component', () => {
       // component/directive specs
       let component = AgentsComponent;
